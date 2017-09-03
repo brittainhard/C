@@ -4,9 +4,10 @@
 void add_block(void *new_pointer)
 {
     struct GarbageItem *next_item = malloc(sizeof(struct GarbageItem));
-    next_item->item = new_pointer;
-    next_item->previous = garbage_head;
+
     garbage_head->next = next_item;
+    next_item->previous = garbage_head;
+    next_item->item = new_pointer;
     garbage_head = next_item;
 }
 
