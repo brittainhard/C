@@ -2,6 +2,7 @@
 #define __GARBAGE_H
 
 #include <stdlib.h>
+#include <stdio.h>
 
 struct GarbageItem {
     void *item;
@@ -9,6 +10,6 @@ struct GarbageItem {
     struct GarbageItem *previous;
 };
 
-int potato();
+void *gmalloc(int size);
 
 #endif
