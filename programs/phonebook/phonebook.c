@@ -12,7 +12,7 @@ struct Entry {
 };
 
 
-struct Entry *get_node(char *name)
+struct Entry *get_new_entry(char *name)
 {
     struct Entry *new_entry = malloc(sizeof(struct Entry));
     strncpy(new_entry->name, name, STRING_SIZE);
@@ -21,9 +21,9 @@ struct Entry *get_node(char *name)
 
 int main(int argc, char *argv[])
 {
-    struct Entry *root = get_node("hard");
-    struct Entry *node1 = get_node("mcdonnell");
-    struct Entry *node2= get_node("overton");
+    struct Entry *root = get_new_entry("hard, brittain");
+    struct Entry *node1 = get_new_entry("mcdonnell, kelly");
+    struct Entry *node2= get_new_entry("overton, john");
     printf("%s %s\n", root->name, node1->name);
     printf("%d\n", strcmp(root->name, node1->name));
     printf("%d\n", strcmp(node1->name, root->name));
