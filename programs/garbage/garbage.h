@@ -6,10 +6,13 @@
 
 struct GarbageItem {
     void *item;
-    struct GarbageItem *next;
     struct GarbageItem *previous;
+    struct GarbageItem *next;
 };
 
+struct GarbageItem *garbage_head;
+
 void *gmalloc(int size);
+void collect_garbage();
 
 #endif

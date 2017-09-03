@@ -10,11 +10,10 @@ struct Entry *get_new_entry(char *name)
 
 int main(int argc, char *argv[])
 {
-    struct Entry *root = get_new_entry("hard, brittain");
+    garbage_head = malloc(sizeof(struct GarbageItem));
+    phonebook_head = get_new_entry("HEAD");
     struct Entry *node1 = get_new_entry("mcdonnell, kelly");
     struct Entry *node2= get_new_entry("overton, john");
-    free(root);
-    free(node1);
-    free(node2);
+    collect_garbage();
     return 0;
 }

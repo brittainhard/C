@@ -16,6 +16,8 @@ struct Entry {
     char name[256];
 };
 
+struct Entry *phonebook_head;
+
 
 struct Entry *get_new_entry(char *name);
 
