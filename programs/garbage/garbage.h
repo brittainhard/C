@@ -10,7 +10,7 @@ struct GarbageItem {
     struct GarbageItem *next;
 };
 
-struct GarbageItem *garbage_head;
+struct GarbageItem *garbage;
 
 void *gmalloc(int size);
 void collect_garbage();
