@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 #include "../garbage/garbage.h"
 
@@ -16,5 +17,6 @@ typedef struct Entry {
     char name[STRING_SIZE];
 } Entry;
 
+Entry *PHONEBOOK_HEAD;
 
 #endif

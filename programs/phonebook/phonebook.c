@@ -12,6 +12,7 @@ Entry *get_new_entry(char *name)
 
 int main(int argc, char *argv[])
 {
+    PHONEBOOK_HEAD = get_new_entry("hard, brittain");
     Entry *node1 = get_new_entry("mcdonnell, kelly");
     Entry *node2 = get_new_entry("overton, john");
     // From "garbage.h"
