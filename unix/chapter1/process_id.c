@@ -3,7 +3,7 @@
  *
  * Here we are using a long to promote portability.
  */
-#include "../apue.h"
+#include <stdio.h>
 
 
 int main(int argc, char *argv[])

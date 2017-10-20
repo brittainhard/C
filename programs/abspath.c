@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <dirent.h>
 
 
 int main(int argc, char *argv[])
 {
-    printf("%s\n", "Hello world!);
+    DIR *dp;
+    struct dirent *dirp;
     return 0;
 }
