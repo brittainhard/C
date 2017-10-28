@@ -8,4 +8,4 @@ program: $(DEPS) $(SOURCE)
 	$(CC) $(CFLAGS) $(SOURCE) -o $(EXE) $(DEPS)
 
 clean:
-	rm -rf a.out *.o a.dSYM
+	rm -rf a.out *.o *.dSYM
