@@ -1,7 +1,7 @@
 CC = gcc
 EXE = a.out
 CFLAGS = -Wall -g
-DEPS = error.o
+DEPS = ../garbage/garbage.o
 HEADERS = apue.h
 
 program: $(DEPS) $(SOURCE)
