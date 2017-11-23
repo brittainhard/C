@@ -2,7 +2,6 @@
 #define __GARBAGE_H
 
 #include <stdlib.h>
-#include <stdio.h>
 
 typedef struct GarbageItem {
     void *item;
