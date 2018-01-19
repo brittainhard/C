@@ -1,11 +1,11 @@
 CC = gcc
-EXE = a.out
 CFLAGS = -Wall -g
-DEPS = ../garbage/garbage.o
-HEADERS = apue.h
+DEBUG_FLAGS = -pg --static -g3
+EXE = primes 
+SOURCE = primes.c
 
-program: $(DEPS) $(SOURCE)
-	$(CC) $(CFLAGS) $(SOURCE) -o $(EXE) $(DEPS)
+primes:
+	$(CC) $(CFLAGS) $(DEBUG_FLAGS) -o $(EXE) $(SOURCE)
 
 clean:
-	rm -rf a.out *.o *.dSYM
+	rm -rf primes gmon.out
